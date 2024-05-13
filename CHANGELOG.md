@@ -4,7 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [0.0.0 (2024-03-27)](#000-2024-03-27)
+- [0.0.0 (2024-05-08)](#000-2024-05-08)
     - [Bug Fixes](#bug-fixes)
     - [Features](#features)
 - [2.2.0 (2024-02-12)](#220-2024-02-12)
@@ -710,18 +710,27 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# [0.0.0](https://github.com/ory/hydra/compare/v2.2.0...v0.0.0) (2024-03-27)
+# [0.0.0](https://github.com/ory/hydra/compare/v2.2.0...v0.0.0) (2024-05-08)
 
 
 ### Bug Fixes
 
 * Correctly pass multiple token audiences and prompt parameters when performing the authorization code flow from the CLI ([#3736](https://github.com/ory/hydra/issues/3736)) ([632faef](https://github.com/ory/hydra/commit/632faef15228c2d0a2caedfc3d7c6a3782c2e131))
+* Do not retry sending responses ([#3764](https://github.com/ory/hydra/issues/3764)) ([1bbfdb5](https://github.com/ory/hydra/commit/1bbfdb56e55525c5bc0526726fa901cf10af59e4))
+* Error log when RP responds with status code 204 ([#3731](https://github.com/ory/hydra/issues/3731)) ([153e4b5](https://github.com/ory/hydra/commit/153e4b56e6de645ee44e4e7833c32a3890e43c54))
 * Upgrade fosite and improve webhook integration ([#3727](https://github.com/ory/hydra/issues/3727)) ([89323e2](https://github.com/ory/hydra/commit/89323e24de470c2b0f3037e0cf8f99bc4373d4fd))
+* Wrap authorize response in transaction ([#3763](https://github.com/ory/hydra/issues/3763)) ([5b106aa](https://github.com/ory/hydra/commit/5b106aadb0e71add56e3cc68e5a9e33cdb81dd39))
 * Wrap token handler in transaction ([#3730](https://github.com/ory/hydra/issues/3730)) ([67a85cc](https://github.com/ory/hydra/commit/67a85cc799b5c6ef278db93aba131e695fd761e9))
 
 ### Features
 
 * Add access token strategy parameter to cli ([#3718](https://github.com/ory/hydra/issues/3718)) ([7862dc3](https://github.com/ory/hydra/commit/7862dc337aba2899bdb945e94eb79d3ab3509202)), closes [#3717](https://github.com/ory/hydra/issues/3717)
+* Add id parameter to create oauth2-client cli ([#3725](https://github.com/ory/hydra/issues/3725)) ([b372fd2](https://github.com/ory/hydra/commit/b372fd20169156efd7c34710f823e0c5b5dbf183)):
+
+    Fixes https://github.com/ory/hydra/issues/3724
+
+* Add Inspect option to registry ([2013450](https://github.com/ory/hydra/commit/2013450a9a55af26523554c3aa01fc5243573f2c))
+* Improve persistence logic ([#3756](https://github.com/ory/hydra/issues/3756)) ([50301e0](https://github.com/ory/hydra/commit/50301e0022ca64c9d0823544c7b664309620c70e))
 
 
 # [2.2.0](https://github.com/ory/hydra/compare/v2.2.0-pre.1...v2.2.0) (2024-02-12)
